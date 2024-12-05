@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: #8b5cf6 #f3f4f6;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  transform: translateY(0);
+  transition: transform 2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Tailwind Initialization */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.lexend-light {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.lexend-medium {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lexend-semibold {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lexend-bold {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.lexend-extrabold {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+
+.inter-light {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}
+
+.inter-medium {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+}
+
+.inter-extrabold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+
+.roboto-flex-bold {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468,
+    "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+/* Scrollbar UI */
+.custom-scrollbar {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 5px; /* Reduce the scrollbar thickness */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 5px;
+  margin: 0 500px; /* Adds padding to make the scrollbar visually shorter */
+}
+
+@media (max-width: 768px) {
+  .custom-scrollbar::-webkit-scrollbar-track {
+    margin: 0 30vw; /* Further reduced for tablets */
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #8b5cf6, #c084fc);
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #c084fc, #8b5cf6);
+}
+
+/* Wave Animation */
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4); /* Spreads outward */
+    opacity: 0; /* Fades out */
+  }
+}
+
+.animate-wave {
+  animation: wave 2s infinite ease-out;
+  z-index: 0;
+  position: absolute;
+}
+
+/* Image Unselectable */
+.unselectable {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+}
